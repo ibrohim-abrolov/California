@@ -750,4 +750,115 @@ img {
   line-height: 22px;
   font-weight: 400;
   color: var(--main-text-color);
+}
+
+.popular {
+  padding-bottom: 75px;
+}
+
+.popular__textbox {
+  max-width: 529px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popular__heading {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-family: var(--main-font-family);
+  font-size: 42px;
+  line-height: 52px;
+  color: var(--main-text-color);
+}
+
+.popular__text {
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-family: var(--main-font-family);
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--main-text-color);
+}
+
+.popular__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.popular__items {
+  padding: 41px 100px 280px 100px;
+  background-color: #dce5e2;
+  border-radius: 16px;
+}
+
+.popular__items--initial {
+  background-image: url("/images/popular-watches.png");
+  background-repeat: no-repeat;
+  background-size: 259px 250px;
+  background-position: bottom center;
+}
+
+.popular__items--middle {
+  background-image: url("/images/popular-iphones.png");
+  background-repeat: no-repeat;
+  background-size: 294px 250px;
+  background-position: bottom center;
+}
+
+.popular__items--last {
+  background-image: url("/images/popular-laptop.png");
+  background-repeat: no-repeat;
+  background-size: 355px 250px;
+  background-position: bottom center;
+}
+
+.popular__mini-textbox {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popular__mini-text {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: var(--main-font-family);
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--main-text-color);
+}
+
+.popular__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: var(--main-font-family);
+  font-size: 28px;
+  line-height: 35px;
+  color: var(--main-text-color);
+}
+
+.popular__link {
+  padding: 14px 53px;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  color: var(--main-text-color);
+  border: 1px solid #000;
+  border-radius: 200px;
+  text-decoration-line: none;
 }/*# sourceMappingURL=main.css.map */
