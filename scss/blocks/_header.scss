@@ -1,0 +1,35 @@
+@use "../variables";
+@use "../mixins";
+
+.site-header {
+    padding-top: 25px;
+}
+
+.site-header__wrapper {
+    @include mixins.flexbox(row, center, space-between);
+}
+
+.nav__list {
+    @include mixins.flexbox(row, center, flex-start);
+    @include mixins.list-reset;
+}
+
+.nav__items:not(:last-child) {
+    margin-right: 33px;
+}
+
+.nav__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+    text-decoration-line: none;
+}
+
+.site-header__icons {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__link:not(:last-child) {
+    margin-right: 21px;
+}
