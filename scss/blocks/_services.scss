@@ -1,0 +1,114 @@
+@use "../variables";
+@use "../mixins";
+
+.service {
+    padding-bottom: 100px;
+}
+
+.service__textbox {
+    max-width: 780px;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 55px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.service__heading {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-family: var(--main-font-family);
+    font-size: 42px;
+    line-height: 52px;
+    color: var(--main-text-color);
+}
+
+.service__paragraph {
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+}
+
+.service__list {
+    @include mixins.flexbox(row, stretch, flex-start);
+    @include mixins.list-reset;
+}
+
+.service__items {
+    background: #fff;
+    border-radius: 32px;
+}
+
+.service__items--initial {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-bottom: 50px;
+    padding: 0 42px;
+}
+
+.service__items--second {
+    @include mixins.flexbox(row, center, flex-start);
+    margin-right: 16px;
+    padding: 0 42px;
+}
+
+.service__items--middle {
+    margin-right: 16px;
+    padding-top: 143px;
+    padding-left: 16px;
+}
+
+.service__items--last {
+    @include mixins.flexbox(column, center, flex-start);
+    padding-top: 114px;
+}
+
+.service__inner-textbox--initial {
+    align-self: flex-end;
+    max-width: 192px;
+    width: 100%;
+    text-align: right;
+}
+
+.service__inner-textbox--second {
+    justify-self: flex-end;
+    max-width: 128px;
+    width: 100%;
+    text-align: right;
+}
+
+.service__inner-textbox--middle {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 41px;
+    text-align: center;
+}
+
+.service__inner-textbox--last {
+    order: -1;
+    max-width: 233px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 42px;
+    text-align: center;
+}
+
+.service__text {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--main-text-color);
+}
+
+.service__title {
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--main-text-color);
+}
