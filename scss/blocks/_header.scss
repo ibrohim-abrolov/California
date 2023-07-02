@@ -23,6 +23,11 @@
     line-height: 17px;
     color: var(--main-text-color);
     text-decoration-line: none;
+    transition: color 0.4s ease;
+}
+
+.nav__link:hover {
+    color: #dce5e2;
 }
 
 .site-header__icons {
