@@ -1,0 +1,115 @@
+@use "../variables";
+@use "../mixins";
+
+.site-article {
+    padding-bottom: 19px;
+}
+
+.site-article__heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: var(--main-font-family);
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.site-article__wrapper {
+    margin-bottom: 68px;
+}
+
+.site-article__input-wrapper {
+    @include mixins.flexbox(row, center, center);
+}
+
+.site-article__input {
+    margin-bottom: 18px;
+    padding: 21px 476px 22px 67px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+    background-color: #f8f9fa;
+    border: 1px solid #c5c5c5;
+    border-radius: 100px;
+}
+
+.site-article__input {
+    background-image: url("/images/input-search.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + -317px) calc(50% + -2px);
+}
+
+.site-article__link-wrapper {
+    @include mixins.flexbox(row, center, center);
+}
+
+.site-article__link {
+    margin-right: 10px;
+    padding: 13px 22px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    border-radius: 200px;
+    text-decoration-line: none;
+}
+
+.site-article__inner {
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 47px;
+    padding-bottom: 43px;
+    background-image: url("/images/article-bg.png");
+    background-position: calc(50% + 1px) calc(50% + 20px);
+    background-repeat: no-repeat;
+    background-color: #dce5e2;
+    border-radius: 16px;
+}
+
+.site-article__textbox {
+    max-width: 549px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-article__title {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-family: var(--main-font-family);
+    font-size: 42px;
+    line-height: 52px;
+    color: var(--main-text-color);
+}
+
+.site-article__text {
+    margin-top: 0;
+    margin-bottom: 240px;
+    line-height: 19px;
+    color: var(--main-text-color);
+}
+
+.form__input {
+    padding: 16px 184px 17px 32px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-text-color);
+    background-color: transparent;
+    border: 1px solid #000;
+    border-right: none;
+    border-radius: 54px 0px 0px 54px;
+}
+
+.form__btn {
+    padding: 17px 33px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    background-color: #000;
+    border-top: none;
+    border-left: none;
+    border-radius: 0px 200px 200px 0px;
+}

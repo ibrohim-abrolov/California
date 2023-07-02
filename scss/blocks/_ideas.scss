@@ -1,0 +1,71 @@
+@use "../variables";
+@use "../mixins";
+
+.ideas {
+    padding-bottom: 75px;
+}
+
+.ideas__textbox {
+    max-width: 497px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ideas__heading {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-family: var(--main-font-family);
+    font-size: 42px;
+    line-height: 52px;
+    color: var(--main-text-color);
+}
+
+.ideas__mini-text {
+    margin-top: 0;
+    margin-bottom: 56px;
+    font-family: var(--main-font-family);
+    font-size: 13px;
+    line-height: 17px;
+    color: var(--main-text-color);
+}
+
+.ideas__inner {
+    @include mixins.flexbox(row, stretch, flex-start);
+    margin-bottom: 73px;
+}
+
+.ideas__img {
+    margin-right: 35px;
+}
+
+.ideas__mini-textbox {
+    max-width: 580px;
+    width: 100%;
+}
+
+.ideas__text {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--main-text-color);
+}
+
+.ideas__text:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.ideas__span {
+    display: block;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.ideas__span {
+    background-image: url("/images/up.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 28px;
+    background-position: calc(50% + 60px) calc(50% + -0px);
+}
